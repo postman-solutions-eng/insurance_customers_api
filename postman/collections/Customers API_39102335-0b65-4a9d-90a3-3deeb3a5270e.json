@@ -15,6 +15,8 @@
 						{
 							"listen": "test",
 							"script": {
+								"id": "7764626c-080f-4ead-b9ff-46140abe9904",
+								"type": "text/javascript",
 								"exec": [
 									"const res = pm.response.json();",
 									"const id = pm.collectionVariables.get('id');",
@@ -49,9 +51,7 @@
 									"    url: `${pm.collectionVariables.get('url')}/delete?id=${id}`,",
 									"    method: 'delete'",
 									"});"
-								],
-								"type": "text/javascript",
-								"id": "7764626c-080f-4ead-b9ff-46140abe9904"
+								]
 							}
 						}
 					],
@@ -112,29 +112,44 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "Connection",
-									"value": "keep-alive",
-									"description": ""
+									"value": "keep-alive"
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "Content-Length",
-									"value": "105",
-									"description": ""
+									"value": "105"
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "Date",
-									"value": "Fri, 11 Jan 2019 00:00:53 GMT",
-									"description": ""
+									"value": "Fri, 11 Jan 2019 00:00:53 GMT"
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "ETag",
-									"value": "W/\"69-ti7ujd/Cyb8EeoWoqRXh482Zy5o\"",
-									"description": ""
+									"value": "W/\"69-ti7ujd/Cyb8EeoWoqRXh482Zy5o\""
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "X-Powered-By",
-									"value": "Express",
-									"description": ""
+									"value": "Express"
 								},
 								{
 									"key": "Content-Type",
@@ -148,11 +163,13 @@
 					]
 				},
 				{
-					"name": "Get users by last name",
+					"name": "Get all users",
 					"event": [
 						{
 							"listen": "test",
 							"script": {
+								"id": "0df2d9e0-892f-47aa-9145-0ca44b79de5a",
+								"type": "text/javascript",
 								"exec": [
 									"const res = pm.response.json();",
 									"const id = pm.collectionVariables.get('id');",
@@ -190,9 +207,7 @@
 									"    url: `${pm.collectionVariables.get('url')}/delete?id=${id}`,",
 									"    method: 'delete'",
 									"});"
-								],
-								"type": "text/javascript",
-								"id": "0df2d9e0-892f-47aa-9145-0ca44b79de5a"
+								]
 							}
 						}
 					],
@@ -209,23 +224,16 @@
 							}
 						],
 						"url": {
-							"raw": "{{baseUrl}}/get/?firstName={{$randomLastName}}",
+							"raw": "{{baseUrl}}/get/",
 							"host": [
 								"{{baseUrl}}"
 							],
 							"path": [
 								"get",
 								""
-							],
-							"query": [
-								{
-									"key": "firstName",
-									"value": "{{$randomLastName}}",
-									"description": "The user's first name (required)"
-								}
 							]
 						},
-						"description": "Retrieves all users with the given `firstName`."
+						"description": "Get all users in the system."
 					},
 					"response": [
 						{
@@ -256,29 +264,44 @@
 							"_postman_previewlanguage": "json",
 							"header": [
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "Connection",
-									"value": "keep-alive",
-									"description": ""
+									"value": "keep-alive"
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "Content-Length",
-									"value": "105",
-									"description": ""
+									"value": "105"
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "Date",
-									"value": "Fri, 11 Jan 2019 00:05:34 GMT",
-									"description": ""
+									"value": "Fri, 11 Jan 2019 00:05:34 GMT"
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "ETag",
-									"value": "W/\"69-F/ktIhtM5We/sndYYNUK1vmdEnQ\"",
-									"description": ""
+									"value": "W/\"69-F/ktIhtM5We/sndYYNUK1vmdEnQ\""
 								},
 								{
+									"description": {
+										"content": "",
+										"type": "text/plain"
+									},
 									"key": "X-Powered-By",
-									"value": "Express",
-									"description": ""
+									"value": "Express"
 								},
 								{
 									"key": "Content-Type",
@@ -300,6 +323,8 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "a9106609-4f80-4d90-86a9-d253cd405143",
+						"type": "text/javascript",
 						"exec": [
 							"const res = pm.response.json();",
 							"",
@@ -331,9 +356,7 @@
 							"        return prev;",
 							"    }, {});",
 							"}"
-						],
-						"type": "text/javascript",
-						"id": "a9106609-4f80-4d90-86a9-d253cd405143"
+						]
 					}
 				}
 			],
@@ -394,29 +417,44 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Connection",
-							"value": "keep-alive",
-							"description": ""
+							"value": "keep-alive"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Content-Length",
-							"value": "101",
-							"description": ""
+							"value": "101"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Date",
-							"value": "Thu, 10 Jan 2019 23:58:59 GMT",
-							"description": ""
+							"value": "Thu, 10 Jan 2019 23:58:59 GMT"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "ETag",
-							"value": "W/\"65-KsPJ95rCxmmvvRBY2Sqroxk2vmA\"",
-							"description": ""
+							"value": "W/\"65-KsPJ95rCxmmvvRBY2Sqroxk2vmA\""
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "X-Powered-By",
-							"value": "Express",
-							"description": ""
+							"value": "Express"
 						},
 						{
 							"key": "Content-Type",
@@ -435,6 +473,8 @@
 				{
 					"listen": "test",
 					"script": {
+						"id": "27e8bcee-ca2f-4b68-b638-8c36fbf5bfa4",
+						"type": "text/javascript",
 						"exec": [
 							"const response = pm.response;",
 							"const id = pm.request.url.query.get('id');",
@@ -452,9 +492,7 @@
 							"",
 							"// cleanup",
 							"pm.collectionVariables.unset('id');"
-						],
-						"type": "text/javascript",
-						"id": "27e8bcee-ca2f-4b68-b638-8c36fbf5bfa4"
+						]
 					}
 				}
 			],
@@ -488,9 +526,9 @@
 					],
 					"query": [
 						{
+							"description": "The user's ID",
 							"key": "id",
-							"value": "{{id}}",
-							"description": "The user's ID"
+							"value": "{{id}}"
 						}
 					]
 				},
@@ -528,29 +566,44 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Connection",
-							"value": "keep-alive",
-							"description": ""
+							"value": "keep-alive"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Content-Length",
-							"value": "64",
-							"description": ""
+							"value": "64"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Date",
-							"value": "Fri, 11 Jan 2019 00:20:55 GMT",
-							"description": ""
+							"value": "Fri, 11 Jan 2019 00:20:55 GMT"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "ETag",
-							"value": "W/\"40-bT/ASzl0KO3wj/eo2xEBaHPLnvk\"",
-							"description": ""
+							"value": "W/\"40-bT/ASzl0KO3wj/eo2xEBaHPLnvk\""
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "X-Powered-By",
-							"value": "Express",
-							"description": ""
+							"value": "Express"
 						},
 						{
 							"key": "Content-Type",
@@ -570,6 +623,7 @@
 					"listen": "test",
 					"script": {
 						"id": "122b6146-4de2-4e61-a0c5-30e7966360ce",
+						"type": "text/javascript",
 						"exec": [
 							"const res = pm.response.json();",
 							"const id = pm.request.url.query.get('id');",
@@ -618,8 +672,7 @@
 							"    url: `${pm.collectionVariables.get('baseUrl')}/delete?id=${id}`,",
 							"    method: 'delete'",
 							"});"
-						],
-						"type": "text/javascript"
+						]
 					}
 				}
 			],
@@ -658,9 +711,9 @@
 					],
 					"query": [
 						{
+							"description": "The user's ID (required)",
 							"key": "id",
-							"value": "{{id}}",
-							"description": "The user's ID (required)"
+							"value": "{{id}}"
 						}
 					]
 				},
@@ -698,29 +751,44 @@
 					"_postman_previewlanguage": "json",
 					"header": [
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Connection",
-							"value": "keep-alive",
-							"description": ""
+							"value": "keep-alive"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Content-Length",
-							"value": "106",
-							"description": ""
+							"value": "106"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "Date",
-							"value": "Fri, 11 Jan 2019 00:18:07 GMT",
-							"description": ""
+							"value": "Fri, 11 Jan 2019 00:18:07 GMT"
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "ETag",
-							"value": "W/\"6a-SA9mzR+M2pmN7WPGgLm1ZqtRYis\"",
-							"description": ""
+							"value": "W/\"6a-SA9mzR+M2pmN7WPGgLm1ZqtRYis\""
 						},
 						{
+							"description": {
+								"content": "",
+								"type": "text/plain"
+							},
 							"key": "X-Powered-By",
-							"value": "Express",
-							"description": ""
+							"value": "Express"
 						},
 						{
 							"key": "Content-Type",
@@ -760,7 +828,7 @@
 	],
 	"variable": [
 		{
-			"id": "60d9fd29-12d7-4e1d-bd13-0654d9b80a93",
+			"id": "07057d87-bb72-4eac-88c8-182fa5508bf9",
 			"key": "baseUrl",
 			"value": "https://bd1edaea-4ae1-45d4-af9a-9110c60ab241.mock.pstmn.io",
 			"type": "string"
