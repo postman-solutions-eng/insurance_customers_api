@@ -3,7 +3,10 @@ info:
   title: Customers
   description: "API for creating and managing P&C Insurance customers."
   version: 1.0.0
-  contact: {}
+  contact:
+    name: Customers Contact
+    email: customers@example.com
+    url: customers.example.com 
 servers:
   - url: "https://3f9ab1dc-fede-484c-b519-0cc8b90c827a.mock.pstmn.io"
 paths:
